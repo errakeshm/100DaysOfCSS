@@ -1,0 +1,592 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.display{
+  background-color:#333;
+  top:-150%;
+  width:100%;
+  height:150%;
+  position:absolute;
+  
+}
+.input{
+  width:100%;
+  height:100%;
+  background:#666666 ;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top:1px solid white;
+}
+div.display .dot{
+  display:inline-block;
+  position:relative;
+  height:30px;
+  width:30px;
+  top:45%;
+  left:45%;
+  border-radius:100%;
+  z-index:2;
+
+  background-color:white;
+  -webkit-box-shadow: 0px -1px 24px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px -1px 24px 0px rgba(255,255,255,1);
+  box-shadow: 0px -1px 24px 0px rgba(255,255,255,1);
+  opacity:0;
+}
+.letters{
+  display:flex;
+  flex-wrap:wrap;
+  position:relative;
+  top:60%;
+}
+.letters span{
+  z-index:3;
+  color:white;
+  line-height:40px;
+  flex:0 0 40px;
+  text-align: center;
+}
+.letters span:hover{
+  border-radius:100%;
+  background-color:#999999;
+  color:white;
+  cursor:pointer;
+  opacity:0.8;
+}
+.help{
+  position: absolute;
+  top: 45%;
+  font-size: 20px;
+  font-weight: bold;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+}
+.text{
+  color:red;
+  text-decoration: underline;
+}
+div.letters span.A:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_a;
+  animation-name: morse_a;
+  -webkit-animation-duration:5.5s;
+  animation-duration: 5.5s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_a{0% {opacity:0;}
+4% {opacity:1;}22% {opacity:0;}
+26% {opacity:1;}80% {opacity:0;}}
+div.letters span.B:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_b;
+  animation-name: morse_b;
+  -webkit-animation-duration:8.0s;
+  animation-duration: 8.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_b{0% {opacity:0;}
+3% {opacity:1;}40% {opacity:0;}
+43% {opacity:1;}55% {opacity:0;}
+58% {opacity:1;}70% {opacity:0;}
+73% {opacity:1;}85% {opacity:0;}}
+div.letters span.C:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_c;
+  animation-name: morse_c;
+  -webkit-animation-duration:10.0s;
+  animation-duration: 10.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_c{0% {opacity:0;}
+2% {opacity:1;}32% {opacity:0;}
+34% {opacity:1;}44% {opacity:0;}
+46% {opacity:1;}76% {opacity:0;}
+78% {opacity:1;}88% {opacity:0;}}
+div.letters span.D:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_d;
+  animation-name: morse_d;
+  -webkit-animation-duration:6.75s;
+  animation-duration: 6.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_d{0% {opacity:0;}
+3% {opacity:1;}47% {opacity:0;}
+50% {opacity:1;}64% {opacity:0;}
+67% {opacity:1;}81% {opacity:0;}}
+div.letters span.E:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_e;
+  animation-name: morse_e;
+  -webkit-animation-duration:2.25s;
+  animation-duration: 2.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_e{0% {opacity:0;}
+11% {opacity:1;}55% {opacity:0;}}
+div.letters span.F:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_f;
+  animation-name: morse_f;
+  -webkit-animation-duration:8.0s;
+  animation-duration: 8.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_f{0% {opacity:0;}
+3% {opacity:1;}15% {opacity:0;}
+18% {opacity:1;}30% {opacity:0;}
+33% {opacity:1;}70% {opacity:0;}
+73% {opacity:1;}85% {opacity:0;}}
+div.letters span.G:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_g;
+  animation-name: morse_g;
+  -webkit-animation-duration:8.75s;
+  animation-duration: 8.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_g{0% {opacity:0;}
+2% {opacity:1;}36% {opacity:0;}
+38% {opacity:1;}72% {opacity:0;}
+74% {opacity:1;}85% {opacity:0;}}
+div.letters span.H:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_h;
+  animation-name: morse_h;
+  -webkit-animation-duration:6.0s;
+  animation-duration: 6.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_h{0% {opacity:0;}
+4% {opacity:1;}20% {opacity:0;}
+24% {opacity:1;}40% {opacity:0;}
+44% {opacity:1;}60% {opacity:0;}
+64% {opacity:1;}80% {opacity:0;}}
+div.letters span.I:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_i;
+  animation-name: morse_i;
+  -webkit-animation-duration:3.5s;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_i{0% {opacity:0;}
+7% {opacity:1;}35% {opacity:0;}
+42% {opacity:1;}70% {opacity:0;}}
+div.letters span.J:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_j;
+  animation-name: morse_j;
+  -webkit-animation-duration:12.0s;
+  animation-duration: 12.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_j{0% {opacity:0;}
+2% {opacity:1;}10% {opacity:0;}
+12% {opacity:1;}37% {opacity:0;}
+39% {opacity:1;}64% {opacity:0;}
+66% {opacity:1;}91% {opacity:0;}}
+div.letters span.K:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_k;
+  animation-name: morse_k;
+  -webkit-animation-duration:8.75s;
+  animation-duration: 8.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_k{0% {opacity:0;}
+2% {opacity:1;}36% {opacity:0;}
+38% {opacity:1;}49% {opacity:0;}
+51% {opacity:1;}85% {opacity:0;}}
+div.letters span.L:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_l;
+  animation-name: morse_l;
+  -webkit-animation-duration:8.0s;
+  animation-duration: 8.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_l{0% {opacity:0;}
+3% {opacity:1;}15% {opacity:0;}
+18% {opacity:1;}55% {opacity:0;}
+58% {opacity:1;}70% {opacity:0;}
+73% {opacity:1;}85% {opacity:0;}}
+div.letters span.M:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_m;
+  animation-name: morse_m;
+  -webkit-animation-duration:7.5s;
+  animation-duration: 7.5s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_m{0% {opacity:0;}
+3% {opacity:1;}43% {opacity:0;}
+46% {opacity:1;}86% {opacity:0;}}
+div.letters span.N:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_n;
+  animation-name: morse_n;
+  -webkit-animation-duration:5.5s;
+  animation-duration: 5.5s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_n{0% {opacity:0;}
+4% {opacity:1;}58% {opacity:0;}
+62% {opacity:1;}80% {opacity:0;}}
+div.letters span.O:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_o;
+  animation-name: morse_o;
+  -webkit-animation-duration:10.75s;
+  animation-duration: 10.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_o{0% {opacity:0;}
+2% {opacity:1;}29% {opacity:0;}
+31% {opacity:1;}58% {opacity:0;}
+60% {opacity:1;}87% {opacity:0;}}
+div.letters span.P:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_p;
+  animation-name: morse_p;
+  -webkit-animation-duration:13.25s;
+  animation-duration: 13.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_p{0% {opacity:0;}
+1% {opacity:1;}8% {opacity:0;}
+9% {opacity:1;}31% {opacity:0;}
+32% {opacity:1;}54% {opacity:0;}
+55% {opacity:1;}77% {opacity:0;}
+78% {opacity:1;}85% {opacity:0;}}
+div.letters span.Q:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_q;
+  animation-name: morse_q;
+  -webkit-animation-duration:12.0s;
+  animation-duration: 12.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_q{0% {opacity:0;}
+2% {opacity:1;}27% {opacity:0;}
+29% {opacity:1;}54% {opacity:0;}
+56% {opacity:1;}64% {opacity:0;}
+66% {opacity:1;}91% {opacity:0;}}
+div.letters span.R:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_r;
+  animation-name: morse_r;
+  -webkit-animation-duration:6.75s;
+  animation-duration: 6.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_r{0% {opacity:0;}
+3% {opacity:1;}17% {opacity:0;}
+20% {opacity:1;}64% {opacity:0;}
+67% {opacity:1;}81% {opacity:0;}}
+div.letters span.S:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_s;
+  animation-name: morse_s;
+  -webkit-animation-duration:4.75s;
+  animation-duration: 4.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_s{0% {opacity:0;}
+5% {opacity:1;}26% {opacity:0;}
+31% {opacity:1;}52% {opacity:0;}
+57% {opacity:1;}78% {opacity:0;}}
+div.letters span.T:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_t;
+  animation-name: morse_t;
+  -webkit-animation-duration:4.25s;
+  animation-duration: 4.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_t{0% {opacity:0;}
+5% {opacity:1;}75% {opacity:0;}}
+div.letters span.U:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_u;
+  animation-name: morse_u;
+  -webkit-animation-duration:6.75s;
+  animation-duration: 6.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_u{0% {opacity:0;}
+3% {opacity:1;}17% {opacity:0;}
+20% {opacity:1;}34% {opacity:0;}
+37% {opacity:1;}81% {opacity:0;}}
+div.letters span.V:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_v;
+  animation-name: morse_v;
+  -webkit-animation-duration:8.0s;
+  animation-duration: 8.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_v{0% {opacity:0;}
+3% {opacity:1;}15% {opacity:0;}
+18% {opacity:1;}30% {opacity:0;}
+33% {opacity:1;}45% {opacity:0;}
+48% {opacity:1;}85% {opacity:0;}}
+div.letters span.W:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_w;
+  animation-name: morse_w;
+  -webkit-animation-duration:8.75s;
+  animation-duration: 8.75s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_w{0% {opacity:0;}
+2% {opacity:1;}13% {opacity:0;}
+15% {opacity:1;}49% {opacity:0;}
+51% {opacity:1;}85% {opacity:0;}}
+div.letters span.X:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_x;
+  animation-name: morse_x;
+  -webkit-animation-duration:10.0s;
+  animation-duration: 10.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_x{0% {opacity:0;}
+2% {opacity:1;}32% {opacity:0;}
+34% {opacity:1;}44% {opacity:0;}
+46% {opacity:1;}56% {opacity:0;}
+58% {opacity:1;}88% {opacity:0;}}
+div.letters span.Y:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_y;
+  animation-name: morse_y;
+  -webkit-animation-duration:12.0s;
+  animation-duration: 12.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_y{0% {opacity:0;}
+2% {opacity:1;}27% {opacity:0;}
+29% {opacity:1;}37% {opacity:0;}
+39% {opacity:1;}64% {opacity:0;}
+66% {opacity:1;}91% {opacity:0;}}
+div.letters span.Z:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_z;
+  animation-name: morse_z;
+  -webkit-animation-duration:10.0s;
+  animation-duration: 10.0s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_z{0% {opacity:0;}
+2% {opacity:1;}32% {opacity:0;}
+34% {opacity:1;}64% {opacity:0;}
+66% {opacity:1;}76% {opacity:0;}
+78% {opacity:1;}88% {opacity:0;}}
+div.letters span.NUM_1:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_1;
+  animation-name: morse_NUM_1;
+  -webkit-animation-duration:15.25s;
+  animation-duration: 15.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_1{0% {opacity:0;}
+1% {opacity:1;}7% {opacity:0;}
+8% {opacity:1;}27% {opacity:0;}
+28% {opacity:1;}47% {opacity:0;}
+48% {opacity:1;}67% {opacity:0;}
+68% {opacity:1;}87% {opacity:0;}}
+div.letters span.NUM_2:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_2;
+  animation-name: morse_NUM_2;
+  -webkit-animation-duration:13.25s;
+  animation-duration: 13.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_2{0% {opacity:0;}
+1% {opacity:1;}8% {opacity:0;}
+9% {opacity:1;}16% {opacity:0;}
+17% {opacity:1;}39% {opacity:0;}
+40% {opacity:1;}62% {opacity:0;}
+63% {opacity:1;}85% {opacity:0;}}
+div.letters span.NUM_3:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_3;
+  animation-name: morse_NUM_3;
+  -webkit-animation-duration:11.25s;
+  animation-duration: 11.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_3{0% {opacity:0;}
+2% {opacity:1;}10% {opacity:0;}
+12% {opacity:1;}20% {opacity:0;}
+22% {opacity:1;}30% {opacity:0;}
+32% {opacity:1;}58% {opacity:0;}
+60% {opacity:1;}86% {opacity:0;}}
+div.letters span.NUM_4:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_4;
+  animation-name: morse_NUM_4;
+  -webkit-animation-duration:9.25s;
+  animation-duration: 9.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_4{0% {opacity:0;}
+2% {opacity:1;}12% {opacity:0;}
+14% {opacity:1;}24% {opacity:0;}
+26% {opacity:1;}36% {opacity:0;}
+38% {opacity:1;}48% {opacity:0;}
+50% {opacity:1;}82% {opacity:0;}}
+div.letters span.NUM_5:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_5;
+  animation-name: morse_NUM_5;
+  -webkit-animation-duration:7.25s;
+  animation-duration: 7.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_5{0% {opacity:0;}
+3% {opacity:1;}16% {opacity:0;}
+19% {opacity:1;}32% {opacity:0;}
+35% {opacity:1;}48% {opacity:0;}
+51% {opacity:1;}64% {opacity:0;}
+67% {opacity:1;}80% {opacity:0;}}
+div.letters span.NUM_6:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_6;
+  animation-name: morse_NUM_6;
+  -webkit-animation-duration:9.25s;
+  animation-duration: 9.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_6{0% {opacity:0;}
+2% {opacity:1;}34% {opacity:0;}
+36% {opacity:1;}46% {opacity:0;}
+48% {opacity:1;}58% {opacity:0;}
+60% {opacity:1;}70% {opacity:0;}
+72% {opacity:1;}82% {opacity:0;}}
+div.letters span.NUM_7:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_7;
+  animation-name: morse_NUM_7;
+  -webkit-animation-duration:11.25s;
+  animation-duration: 11.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_7{0% {opacity:0;}
+2% {opacity:1;}28% {opacity:0;}
+30% {opacity:1;}56% {opacity:0;}
+58% {opacity:1;}66% {opacity:0;}
+68% {opacity:1;}76% {opacity:0;}
+78% {opacity:1;}86% {opacity:0;}}
+div.letters span.NUM_8:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_8;
+  animation-name: morse_NUM_8;
+  -webkit-animation-duration:13.25s;
+  animation-duration: 13.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_8{0% {opacity:0;}
+1% {opacity:1;}23% {opacity:0;}
+24% {opacity:1;}46% {opacity:0;}
+47% {opacity:1;}69% {opacity:0;}
+70% {opacity:1;}77% {opacity:0;}
+78% {opacity:1;}85% {opacity:0;}}
+div.letters span.NUM_9:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_9;
+  animation-name: morse_NUM_9;
+  -webkit-animation-duration:15.25s;
+  animation-duration: 15.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_9{0% {opacity:0;}
+1% {opacity:1;}20% {opacity:0;}
+21% {opacity:1;}40% {opacity:0;}
+41% {opacity:1;}60% {opacity:0;}
+61% {opacity:1;}80% {opacity:0;}
+81% {opacity:1;}87% {opacity:0;}}
+div.letters span.NUM_0:active ~ div.display span.dot
+{
+  -webkit-animation-name:morse_NUM_0;
+  animation-name: morse_NUM_0;
+  -webkit-animation-duration:17.25s;
+  animation-duration: 17.25s;
+  animation-iteration-count: 1;
+}
+@keyframes morse_NUM_0{0% {opacity:0;}
+1% {opacity:1;}18% {opacity:0;}
+19% {opacity:1;}36% {opacity:0;}
+37% {opacity:1;}54% {opacity:0;}
+55% {opacity:1;}72% {opacity:0;}
+73% {opacity:1;}90% {opacity:0;}}
+
+.A::before{ content:"A"; }
+.B::before{ content:"B"; }
+.C::before{ content:"C"; }
+.D::before{ content:"D"; }
+.E::before{ content:"E"; }
+.F::before{ content:"F"; }
+.G::before{ content:"G"; }
+.H::before{ content:"H"; }
+.I::before{ content:"I"; }
+.J::before{ content:"J"; }
+.K::before{ content:"K"; }
+.L::before{ content:"L"; }
+.M::before{ content:"M"; }
+.N::before{ content:"N"; }
+.O::before{ content:"O"; }
+.P::before{ content:"P"; }
+.Q::before{ content:"Q"; }
+.R::before{ content:"R"; }
+.S::before{ content:"S"; }
+.T::before{ content:"T"; }
+.U::before{ content:"U"; }
+.V::before{ content:"V"; }
+.W::before{ content:"W"; }
+.X::before{ content:"X"; }
+.Y::before{ content:"Y"; }
+.Z::before{ content:"Z"; }
+
+.NUM_0::before{ content:"0"; }
+.NUM_1::before{ content:"1"; }
+.NUM_2::before{ content:"2"; }
+.NUM_3::before{ content:"3"; }
+.NUM_4::before{ content:"4"; }
+.NUM_5::before{ content:"5"; }
+.NUM_6::before{ content:"6"; }
+.NUM_7::before{ content:"7"; }
+.NUM_8::before{ content:"8"; }
+.NUM_9::before{ content:"9"; }
