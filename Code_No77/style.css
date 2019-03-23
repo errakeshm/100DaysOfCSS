@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.center {
+  width:100%;
+  height:100%;
+  background-color:darkorchid;
+}
+.ball{
+  border-radius:50%;
+  background-color:yellow;
+  height:50px;
+  width:50px;
+  position:absolute;
+  animation:move 6s ease-in-out infinite;
+    
+}
+.ball:nth-child(1){
+  z-index: 1;
+  opacity:1;
+}
+.ball:nth-child(2){
+  animation-delay: 40ms;
+  opacity:0.6;
+}
+.ball:nth-child(3){
+  animation-delay: 60ms;
+  opacity:0.6;
+}
+.ball:nth-child(4){
+  animation-delay: 80ms;
+  opacity:0.4;
+}
+.ball:nth-child(5){
+  animation-delay: 90ms;
+  opacity:0.2;
+}
+.ball:nth-child(6){
+  animation-delay: 100ms;
+  opacity:0.2;
+}
+@keyframes move {
+  0%{
+    background-color:yellow;
+    transform:translate(20px,20px);
+  }
+  25%{
+    background-color:greenyellow;
+    transform:translate(330px,330px);
+  }
+  50%{
+    background-color:snow;
+    transform:translate(330px,20px);
+  }
+  75%{
+    background-color:red;
+    transform:translate(20px,330px);
+  }
+  100%{
+    background-color:yellow;
+    transform:translate(20px,20px);
+  }
+}
