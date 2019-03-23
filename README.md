@@ -19,4 +19,4 @@ Some of my pens for 100 days of css challenge. Made with Pure CSS and HTML.
 * [Code Pen Link](https://codepen.io/rakeshmty/pen/moaNNY)
 
 ### Observations
-* The problem was regarding showing a sort of ray the ball (like that of a comet)
+* The problem was regarding showing a sort of ray following the ball as it moves(like that of a comet)
