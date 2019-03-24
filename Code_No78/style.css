@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.center {
+  width:100%;
+  height:100%;
+  background-color:white;
+  padding-left:25%;
+  padding-top:15%;
+}
+.box{
+  width: 100%;
+  margin-bottom:10%;
+}
+
+.box div{
+  background-color:#26a69a;
+  color: white; 
+  width: 200px;
+  height:70px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 70px;
+  transition: all 200ms ease-in-out;
+}
+.box div::before{
+  content:'HOVER ME';
+  font-weight: 500;
+  font-size: 18px;
+}
+.hover1:hover{
+  cursor:pointer;
+  background-color:#2bbbad;
+  transform: scaleX(1.05);
+  -webkit-box-shadow: 2px 3px 10px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 10px -2px rgba(0,0,0,0.75);
+  box-shadow: 2px 3px 10px -2px rgba(0,0,0,0.75);
+}
+.hover2:hover{
+  cursor:pointer;
+  transform: scaleX(1.05);
+  background-color: #2bbbad;
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2), 4px 8px 8px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2), 4px 8px 8px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2), 4px 8px 8px 0 rgba(0, 0, 0, 0.25);
+}
+.hover3:hover{
+  background-color:#2bbbad;
+  cursor:pointer;
+  transform: scaleX(1.05);
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2), 6px 12px 12px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2), 6px 12px 12px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2), 6px 12px 12px 0 rgba(0, 0, 0, 0.25);
+  
+}
+@keyframes zoom{
+  0%{
+    zoom:100%;
+  }
+  100%{
+    zoom:105%;
+  }
+}

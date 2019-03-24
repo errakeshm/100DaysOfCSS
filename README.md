@@ -20,3 +20,12 @@ Some of my pens for 100 days of css challenge. Made with Pure CSS and HTML.
 
 ### Observations
 * The problem was regarding showing a sort of ray following the ball as it moves(like that of a comet)
+
+## Problem No 78
+
+### Link
+
+* [Code Pen Link](https://codepen.io/rakeshmty/pen/jJdxpE)
+
+### Observations
+* The problem was regarding scaling of the elements instead of using zoom. Zoom just expands the element thereby disturbing and causing a slight shift of rest of the buttons.
