@@ -11,7 +11,7 @@ Some of my pens for 100 days of css challenge. Made with Pure CSS and HTML.
 
 ## Problem No 12
 
-* The problem was about showcasing a ease-in popup functionality when hovering over a word.
+* The problem was about showcasing a ease-in popup functionality when hovering over a word using only CSS.
 
 ### Link
 
