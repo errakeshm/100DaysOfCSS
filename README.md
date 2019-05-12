@@ -9,6 +9,14 @@ Some of my pens for 100 days of css challenge. Made with Pure CSS and HTML.
 
 * [Code Pen Link](https://codepen.io/rakeshmty/pen/ZZdBva)
 
+## Problem No 12
+
+* The problem was about showcasing a ease-in popup functionality when hovering over a word.
+
+### Link
+
+* [Code Pen Link](https://codepen.io/rakeshmty/pen/jorKOb)
+
 
 ## Problem No 71
 

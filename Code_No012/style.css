@@ -1,0 +1,143 @@
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(95, 191, 230);
+  box-shadow:inset 0px 0px 2px 2px rgb(28, 153, 211);
+}
+
+.center{
+  padding-left:20px;
+  padding-top:60px;
+  padding-right:20px;
+  word-wrap: break-word;
+}
+
+.quote{
+  font-weight:bolder;
+  font-size:200px;
+  display:block;
+  position:absolute;
+  quotes:"\201C" "\201D" "\2018" "\2019";
+  color:rgb(109, 198, 228);
+}
+
+.clip{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(10, 10, 149) transparent transparent  transparent;
+  top: 120px;
+}
+
+q:before{
+  content:no-open-quote;
+}
+
+q:after{
+  content: close-quote;
+}
+
+.content{
+  font-size:27px;
+  font-weight:400;
+  display: block;
+  position:absolute;
+  color:white;
+  top:32%;
+  left:12%
+}
+
+.signature{
+  font-style: italic ;
+  font-size:25px;
+  display: block;
+  color:white;
+  position:absolute;
+  top:70%;
+  left:15%;
+}
+
+.meaning{
+  background-color:rgb(72, 162, 197);
+  display:inline-block;
+  padding:5px;
+}
+
+.meaning-panel{
+  height:120px;
+  width:250px;
+  z-index:2;
+  display:block;
+  position:absolute;
+  background-color:rgb(10, 10, 149);
+  top:-100px;
+  display:none;
+}
+
+.meaning-panel > .pronunciation{
+  background-color:white;
+  padding-left:10px;
+  padding-top:10px;
+  height:30px;
+  font-size:20px;
+  color:black;
+}
+
+.meaning-panel > .explanation{
+  color:white;
+  height:40px;
+  padding:10px;
+  font-size:15px;
+}
+.meaning:hover{
+  cursor:pointer;
+}
+
+.meaning-panel:hover{
+  cursor:auto;
+}
+
+.meaning:hover .meaning-panel{
+  display:block;
+  animation-name:appear;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+  animation-timing-function: ease-in;
+}
+
+.meaning-panel::before{
+  display:none;
+}
+
+.meaning:not(:hover) .meaning-panel{
+  display:none;
+}
+@keyframes appear{
+  0%{
+    transform:translateY(-10%);
+    opacity:0;
+  }
+  50%{
+    opacity:0.5;
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0%);
+  }
+}
